@@ -1,16 +1,11 @@
 @media (max-width: 769px) {
 
   // burger
-
-  .burger__icon {
-    display: block;
-  }
-
   .menu {
     &__body {
       position: absolute;
       top: 0;
-      right: -100%;
+      top: -150%;
       height: 100vh;
       width: 100%;
       background-color: rgb(132, 57, 246);
@@ -19,7 +14,7 @@
       overflow: auto;
 
       &.active {
-        right: 0;
+        top: 0;
       }
 
       &__list {
@@ -34,4 +29,11 @@
       }
     }
   }
+
+  .burger__icon {
+    display: block;
+  }
+
 }
+
+// works
