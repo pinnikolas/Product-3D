@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>Product 3D</title>
 </head>
 
@@ -38,7 +39,7 @@
 
   <main>
 
-    <!-- <section id="hero" class="hero">
+    <section id="hero" class="hero">
       <div class="container container-hero">
         <div class="hero__image">
           <img src="images/hero/3d.svg" alt="3D">
@@ -64,13 +65,13 @@
             </li>
           </ul>
           <div class="hero__link">
-            <a href="#" class="hero__button">Get in touch today
+            <a href="#" class="button-link">Get in touch today
               <img src="images/icons/arrow-right.svg" alt="arrow-right">
             </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section id="we" class="we">
       <div class="container container-we">
@@ -103,61 +104,130 @@
 
     <section id="works" class="works">
       <div class="container">
-        <h2 class="title works-title">
+        <h2 class="title works__title">
           <span>our</span> WORKS
         </h2>
-        <div class="works__items">
-          <div class="works__item works__item--big">
-            <img src="images/works/slide-1/watch-1.svg" alt="watch-1">
+
+        <div class="works__slider swiper">
+          <div class="works__slider-wrapper swiper-wrapper">
+            <div class="works__slide swiper-slide">
+              <div class="works__slide-inner">
+                <div class="works__big-image">
+                  <img src="images/works/slide-1/watch-1.svg" alt="watch-1">
+                </div>
+                <div class="works__images">
+                  <img src="images/works/slide-1/watch-5.svg" alt="watch-5">
+                  <img src="images/works/slide-1/watch-2.svg" alt="watch-2">
+                  <img src="images/works/slide-1/watch-3.svg" alt="watch-3">
+                  <img src="images/works/slide-1/watch-4.svg" alt="watch-4">
+                </div>
+              </div>
+              <div class="works__slide-inner">
+                <div class="works__images">
+                  <img src="images/works/slide-1/filter-5.svg" alt="filter-5">
+                  <img src="images/works/slide-1/filter-2.svg" alt="filter-2">
+                  <img src="images/works/slide-1/filter-1.svg" alt="filter-1">
+                  <img src="images/works/slide-1/filter-4.svg" alt="filter-4">
+                </div>
+                <div class="works__big-image">
+                  <img src="images/works/slide-1/filter-3.svg" alt="filter-3">
+                </div>
+              </div>
+              <div class="works__slide-inner">
+                <div class="works__big-image">
+                  <img src="images/works/slide-1/printer-1.svg" alt="printer-1">
+                </div>
+                <div class="works__images">
+                  <img src="images/works/slide-1/printer-5.svg" alt="printer-5">
+                  <img src="images/works/slide-1/printer-2.svg" alt="printer-2">
+                  <img src="images/works/slide-1/printer-3.svg" alt="printer-3">
+                  <img src="images/works/slide-1/printer-4.svg" alt="printer-4">
+                </div>
+              </div>
+            </div>
+            <div class="works__slide swiper-slide">
+              <div class="works__slide-inner">
+                <div class="works__big-image">
+                  <img src="images/works/slide-2/port-1.svg" alt="port-1">
+                </div>
+                <div class="works__images">
+                  <img src="images/works/slide-2/port-5.svg" alt="port-5">
+                  <img src="images/works/slide-2/port-2.svg" alt="port-2">
+                  <img src="images/works/slide-2/port-3.svg" alt="port-3">
+                  <img src="images/works/slide-2/port-4.svg" alt="port-4">
+                </div>
+              </div>
+              <div class="works__slide-inner">
+                <div class="works__big-image">
+                  <img src="images/works/slide-2/coffee-machine-1.svg" alt="filter-1">
+                </div>
+                <img src="images/works/slide-2/coffee-machine-2.svg" alt="filter-2">
+              </div>
+              <div class="works__slide-inner">
+                <div class="works__big-image">
+                  <img src="images/works/slide-2/electric-shaver-1.svg" alt="electric-shave-1">
+                </div>
+                <div class="works__images">
+                  <img src="images/works/slide-2/electric-shaver-5.svg" alt="electric-shave-5">
+                  <img src="images/works/slide-2/electric-shaver-2.svg" alt="electric-shave-2">
+                  <img src="images/works/slide-2/electric-shaver-3.svg" alt="electric-shave-3">
+                  <img src="images/works/slide-2/electric-shaver-4.svg" alt="electric-shave-4">
+                </div>
+              </div>
+            </div>
+            <div class="works__slide swiper-slide">
+              <div class="works__slide-inner">
+                <div class="works__big-image">
+                  <img src="images/works/slide-3/hearphones-1.svg" alt="hearphones-1">
+                </div>
+                <div class="works__images">
+                  <img src="images/works/slide-3/hearphones-5.svg" alt="hearphones-5">
+                  <img src="images/works/slide-3/hearphones-2.svg" alt="hearphones-2">
+                  <img src="images/works/slide-3/hearphones-3.svg" alt="hearphones-3">
+                  <img src="images/works/slide-3/hearphones-4.svg" alt="hearphones-4">
+                </div>
+              </div>
+              <div class="works__slide-inner">
+                <div class="works__images">
+                  <img src="images/works/slide-3/bracket-5.svg" alt="bracket-5">
+                  <img src="images/works/slide-3/bracket-2.svg" alt="bracket-2">
+                  <img src="images/works/slide-3/bracket-1.svg" alt="bracket-1">
+                  <img src="images/works/slide-3/bracket-4.svg" alt="bracket-4">
+                </div>
+                <div class="works__big-image">
+                  <img src="images/works/slide-3/bracket-3.svg" alt="bracket-3">
+                </div>
+              </div>
+              <div class="works__slide-inner">
+                <div class="works__big-image">
+                  <img src="images/works/slide-3/soap-1.svg" alt="soap-1">
+                </div>
+                <img src="images/works/slide-3/torch-1.svg" alt="torch-1">
+              </div>
+            </div>
           </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/watch-2.svg" alt="watch-2">
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+        <div class="works__buttons">
+          <div class="works__link">
+            <a href="#" class="button-link works__button-link">Get in touch today
+              <img src="images/icons/arrow-right.svg" alt="arrow-right">
+            </a>
           </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/watch-3.svg" alt="watch-3">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/watch-4.svg" alt="watch-4">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/watch-5.svg" alt="watch-5">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/filter-1.svg" alt="filter-1">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/filter-2.svg" alt="filter-2">
-          </div>
-          <div class="works__item works__item--big">
-            <img src="images/works/slide-1/filter-3.svg" alt="filter-3">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/filter-4.svg" alt="filter-4">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/filter-5.svg" alt="filter-5">
-          </div>
-          <div class="works__item works__item--big">
-            <img src="images/works/slide-1/printer-1.svg" alt="printer-1">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/printer-2.svg" alt="printer-2">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/printer-3.svg" alt="printer-3">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/printer-4.svg" alt="printer-4">
-          </div>
-          <div class="works__item">
-            <img src="images/works/slide-1/printer-5.svg" alt="printer-5">
+          <div class="works__link">
+            <a href="#" class="works__button-price">Prices</a>
           </div>
         </div>
       </div>
     </section>
 
   </main>
-<script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

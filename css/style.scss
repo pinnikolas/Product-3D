@@ -10,6 +10,57 @@
   padding: 0 15px;
 }
 
+.title {
+  font-family: $MainFont;
+  font-size: 80px;
+  font-weight: 550;
+  line-height: 88px;
+  color: $mainColor;
+}
+
+.button-link {
+  font-family: $MainFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  color: #fff;
+  padding: 26px 34px;
+  background-color: $mainColor;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.2s;
+
+  img {
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    img {
+      transform: translateX(15px) scale(1.5);
+    }
+
+    &::after {
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  &::after {
+    content: '';
+    border: 1px $mainColor solid;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    position: absolute;
+    z-index: 10;
+    left: -10px;
+    top: -10px;
+    opacity: 0.5;
+    transition: 0.4s;
+  }
+}
+
 // header =====================================================
 
 .header {
@@ -164,49 +215,6 @@
     }
   }
 
-  &__button {
-    font-family: $MainFont;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-
-    color: #fff;
-    padding: 26px 34px;
-    background-color: $mainColor;
-    text-transform: uppercase;
-    position: relative;
-    transition: 0.2s;
-
-    img {
-      margin-left: 5px;
-      transition: 0.3s;
-    }
-
-    &:hover {
-      img {
-        transform: translateX(15px) scale(1.5);
-      }
-
-      &::after {
-        left: 0px;
-        top: 0px;
-      }
-    }
-
-    &::after {
-      content: '';
-      border: 1px $mainColor solid;
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      position: absolute;
-      z-index: 10;
-      left: -10px;
-      top: -10px;
-      opacity: 0.5;
-      transition: 0.4s;
-    }
-  }
-
   .container-hero {
     display: flex;
   }
@@ -253,19 +261,9 @@
     list-style-image: url('../images/icons/circle-row.svg');
   }
 
-  &__iamge {}
-
   .container-we {
     display: flex;
     justify-content: space-between;
-  }
-
-  .title {
-    font-family: $MainFont;
-    font-size: 80px;
-    font-weight: 550;
-    line-height: 88px;
-    color: $mainColor;
   }
 
   .we-title {
@@ -291,29 +289,68 @@
 // works ===================================================
 
 .works {
+  padding: 80px 0;
 
-  &__items {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+  &__title {
+    font-weight: 300;
+    font-style: italic;
 
-  &__item {
-    position: relative;
-    padding: 0 0 85% 0;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    span {
+      font-weight: 550;
+      text-transform: uppercase;
+      font-style: normal;
     }
   }
-}
-.container {
-}
-.title {
-}
-.works-title {
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button-link {
+    margin-right: 40px;
+  }
+
+  &__button-price {
+    text-transform: uppercase;
+    font-family: $MainFont;
+    font-size: 14px;
+    font-weight: 400;
+    color: $mainColor;
+    padding: 25px 50px;
+    border: 1px $mainColor solid;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $mainColor;
+      color: #fff;
+    }
+  }
+
+  &__big-image {
+    &:nth-child(2) {
+      margin-left: 5px;
+    }
+
+    gap: 20px;
+  }
+
+  &__slider {
+    margin-bottom: 100px;
+  }
+
+  &__slide-inner {
+    display: flex;
+    gap: 20px;
+
+    &:not(last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__images {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 50% 50%;
+  }
 }
